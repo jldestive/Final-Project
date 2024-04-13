@@ -47,13 +47,13 @@ int main() {
     signal(SIGINT, SIG_IGN); // ignorar señal SIGINT
 
     if (pipe(fd) == -1) {
-        fprintf(stderr, "Error al crear la tubería.\n");
+        fprintf(stderr, "Error al crear la tuberia.\n");
         return 1;
     }
 
     sockfd = socket(AF_INET, SOCK_STREAM, 0);
     if (sockfd == -1) {
-        printf("Error en la creación del socket.\n");
+        printf("Error en la creacion del socket.\n");
         exit(0);
     }
 
